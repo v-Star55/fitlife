@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "scripts": {
       "start": "cd frontend && npm start && cd ../vcall && npm start && cd ../backend && nodemon index.js",
-      "dev" : "concurrently \"cd frontend && npm start\" \"cd vcall && npm start\" \"cd backend && npm start\""
+      "dev" : "concurrently \"cd frontend && npm start\" \"cd vcall && npm start\" \"cd backend && npm start\" \"cd exercise && npm start\""
     },
-    
+
     "devDependencies": {
       "concurrently": "^6.2.2"
     }

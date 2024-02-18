@@ -2,7 +2,8 @@ Steps to start the project:
 
 1. Download the Zip.
 2. Extract it to a specific location.
-3. run the command "npm run dev" without going in any other directory.
+3. run "npm i" in each folder.
+4. run the command "npm run dev" without going in any other directory.
 
 
 Features:
