@@ -7,6 +7,7 @@ import Footer from './pages/home/Footer';
 import UserSignUp from './views/userSignUp';
 import UserLogIn from './views/userLogIn';
 import User from './pages/user/User';
+import CommunityPage from './pages/home/community/CommunityPage';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -22,6 +23,7 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/login' element={<UserLogIn setIsAuthenticated={setIsAuthenticated} />} />
               <Route path='/SignUp' element={<UserSignUp setIsAuthenticated={setIsAuthenticated} />} />
+              <Route path='/community' element={<CommunityPage />} />
             </Routes>
             <Footer />
           </>

@@ -75,26 +75,17 @@ const Footer = () => {
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <div class="fs-widget">
-                <h4>Tips &amp; Guides</h4>
-                <div class="fw-recent">
-                  <h6>
-                    <a href="#">
-                      Physical fitness may help prevent depression, anxiety
-                    </a>
-                  </h6>
-                
+                <div className="container">
+                    <h1>Subscribe</h1>
+                    <p>Subscribe to our newsletter and stay updated.</p>
                 </div>
-                <div class="fw-recent">
-                  <h6>
-                    <a href="#">
-                      Fitness: The best exercise to lose belly fat and tone
-                      up...
-                    </a>
-                  </h6>
-               
+                <div className="form-input">
+                    <label htmlFor="email"></label>
+                    <input type="email" placeholder="Your Email" />
+                    <button className="subscribe-btn">Subscribe</button>
+    
                 </div>
-              </div>
+ 
             </div>
           </div>
           <div class="row copyright">

@@ -31,7 +31,7 @@ const UserNavbar = ({setIsAuthenticated}) => {
         <Link to="/user/bmi">Calculate BMI</Link>
       </li>
       <li className='navbar-ul_li'>
-        <a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer">Live Session</a>
+        <Link to="/user/live">Live Session</Link>
       </li>
       <li className='navbar-ul_li'>
         <Link to="/user/exercise">Exercise</Link>
