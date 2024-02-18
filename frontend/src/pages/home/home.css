@@ -1,0 +1,632 @@
+
+  /* /////////////////////////////////////////////////////////////////////////
+  /////////////// */
+  .popup {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    padding: 0.5rem;
+    width: 20rem;
+    font-size: 1rem;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: 0%;
+    margin-left: -90px;
+  }
+  .popuptext span{
+    color: #f6614c;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    transform: rotate(180deg);
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  /* ///////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////  HERO SECTION */
+  
+  .hero {
+    background-image:url("./../../Assests/workout.jpg");
+          background-size:cover;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+          background-repeat: 'no-repeat';
+         height: 100vh;
+         display: flex;
+         justify-content: space-between;
+            align-items: center;
+  }
+  
+  .hero::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.489);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+  .hero-tagline{
+ 
+    color: white;
+    padding-left: 3rem;
+    z-index: 100;
+    width: 30rem;
+  }
+  
+  .hero-span{
+    color: #f6614c;
+  }
+  
+  
+  .hero-image{
+    z-index: 100000;
+    position: relative;
+  }
+  
+  
+  .hero-buttons{
+  display: flex;
+  width: 28rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  }
+  
+  .hero-link{
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f6614c;
+  
+  }
+  
+  .hero-link:hover{
+   
+    color: #f6614c;
+    text-decoration: underline;
+  }
+  
+  /* //////////////////////////// achievement /// */
+  
+  .achievement{
+    z-index: 102;
+    position: relative;
+    width: 20rem;
+  }
+  
+  .p-2{
+    text-align: center;
+    /* border: 2px solid red; */
+    width: 15rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .desc{
+    color: white;
+  
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  
+  .border-up{
+    border-top: 1px solid white;
+  }
+  
+  
+  /* /// heading /// */
+  
+  .heading-1{
+  
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    text-transform: capitalize;
+    
+    
+  }
+  
+  
+  .heading-2{
+    padding-top: 1rem;
+    font-size: 2.7rem;
+    text-align: center;
+    color: #eee;
+    font-weight: 900;
+  }
+  
+  
+  /* /// button /// */
+  
+  .btn{
+    padding: .7rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    background-color:#f6614c;
+    box-shadow: #f6604cec 0px 7px 29px 0px;
+  }
+  
+  .btn:hover{
+    background-color:#f85742;
+    color: aliceblue;
+  }
+  
+  
+  
+  
+  /* ////////////////////////////////////////////////////////////////////////
+  ////////////////////////  PLAY BUTTON */
+  .play-button{
+   
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    width: 15rem;  
+  }
+  
+  .play-button p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .circle{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow: 0px 0px 1em #f6614c;
+    transition: all 0.3s linear;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .circle:hover{
+    box-shadow: 0px 0px 3em #f6614c;
+  
+  
+  }
+  
+  .circle span{
+    color:#f6614c ;
+    font-size: 50px;
+  }
+   
+  
+  .play {
+    position: absolute;
+    z-index: 10;
+    left: 34%;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 1.5rem;
+    height: 1.6rem;
+    background-color: #f6614c;
+    clip-path: polygon(100% 51%, 0 0, 0 100%);
+  }
+  
+  /*///////////////////////////////////////////////////
+  //////////////// GOAL */
+  
+  .goal{
+    margin-top: 2rem;
+    height: 35vh;
+    /* overflow: scroll; */
+  }
+  
+  .goal-line{
+    width: 3rem;
+    height: .2rem;
+    background-color: #f6614c;
+    margin-right:.5rem ;
+    margin-bottom: .3rem;
+  }
+  
+  
+  .heading-3{
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .goal-card{
+    margin-top: 2rem;
+    padding-inline: .4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.3rem;
+    width: 18rem;
+    height: 7rem;
+    box-shadow: #00000075 0px 7px 29px 0px;
+  }
+  
+  .goal-card__text{
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  
+  .goal-card__text span{
+    color: #f6614c;
+  }
+  
+  
+  /* ////////////////////////////////////////////////////////////
+  ////////// Search Exercises */
+  
+  .services{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-attachment: fixed;
+    background-image: url(./../../Assests/section_bg03.png);
+    /* filter: brightness(50%); */
+  }
+  
+  .services img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .searchExercise{
+    /* border: 2px solid blueviolet; */
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 60px;
+  
+  }
+  
+  .searchExercise input{
+    margin-top: 2rem;
+    width: 48rem;
+    height: 3rem;
+    outline: none;
+    border: 1px solid rgb(195, 193, 193);
+    font-size: 1.1rem;
+    background-color: #eeecec;
+    padding-inline: 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn-search{
+    margin-left: .3rem;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+    background-color: #ff2625;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    /* box-shadow: rgba(100, 100, 111, 0.635) 0px 7px 29px 0px; */
+  }
+  
+  .btn-search:hover{
+    background-color: white;
+    color: #ff2625;
+    border: 1px solid #ff2625;
+    box-shadow: rgba(100, 100, 111, 0.635) 0px 7px 29px 0px;
+  
+  }
+  
+  .btn-search:active{
+    background-color: #ff2625;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.477) 1.95px 1.95px 2.6px;
+  
+  }
+  
+  
+  
+  
+  /* //////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////// Horixaotaf */
+  
+  .scroll{
+    /* background-color: rgba(0, 0, 0, 0.751); */
+    padding: 1rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    height: 28rem;
+      /* border: 2px solid rgb(43, 226, 98); */
+    overflow-y: hidden;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 0rem;
+  }
+  
+  .excard{
+    margin-left: 2rem;
+    /* border: 2px solid rgb(43, 226, 98); */
+    text-align: center;
+    width: 20rem;
+    height: 22rem;
+    background-color:#ffffff42;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s linear;
+    color: white;
+  
+  }
+  
+  .excard:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+  }
+  
+  
+  .excard h2{
+    color: rgba(0, 0, 0, 0.25);
+    margin-top: -.5rem;
+    margin-right: -11rem;
+    font-size: 7em;
+    pointer-events: none;
+  }
+  
+  .excard h3{
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    color: #000000c4;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  
+  
+  /*//////////////////////////////////////// TRAINER  */
+  
+  .trainer{
+    margin-top: 1rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: #f6614c;
+  }
+  
+  .trainer-bg{
+    object-position: center;
+    /* transform: scale(0.5); */
+    height: 100%;
+    filter: brightness(50%);
+    width: 100%;
+  }
+  
+  .trainer-text{
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    left: 54%;
+    width: max-content;
+    transform:translateX(-50%);
+    /* border: 2px solid red; */
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .trainer-text span{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 9rem;
+  }
+  
+  .trainer-text img{
+    height:11rem;
+    width: 11rem;
+  }
+  
+  
+  .trailer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .trailer video{
+    max-width: 70rem;
+    /* height: 900px; */
+    outline: none;
+  }
+  
+  .trailer p{
+    position: absolute;
+    top: 2%;
+    left: 94%;
+    cursor: pointer;
+    color: white;
+    max-width: 50px;
+    font-size: 3.5rem;
+    transition: all 0.5s;
+    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+  
+  }
+  
+  
+  
+  
+  .trailer p:hover{
+    transform: rotate(50deg);
+  }
+  
+  .active{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /*/////////////////////////////////////////////////////////////
+  /////////////////////////// exercise  */
+  
+  .exercise{
+    background-color: #f5f5f5b2;
+  }
+  
+  /*/////////////////////////////////////////////////////////////
+  /////////////////////////// exercise-card  */
+  
+  .exercise-card{
+    background-color: white;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    width: 25rem;
+    height: 33rem;
+  }
+  
+  
+  .exercise-btns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .exercise-btns Button{
+    width: 8rem;
+  }
+  
+  
+  .exercise-video__box{
+    padding: 2rem;
+    /* border: 2px solid red; */
+    display: grid;
+    column-gap: 3rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+  }
+  
+  .exercise-video__img{
+    height: 17rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius:2rem ;
+    margin-bottom: 1rem;
+  }
+  
+  .exercise-video{
+    text-decoration: none;
+  }
+  .exercise-video__content{
+    text-decoration: none;
+    /* border: 2px solid red; */
+    width: 30.5rem;
+    height: 25rem;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease;
+  }
+  
+  .exercise-video__content:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  /* ///////////////////////////////////////////////////////////////////////////
+  /////////////////////  WORKOUT PLANNER */
+  
+  .label{
+    font-size: 1.6rem;
+    margin-right: 2rem;
+  }
+  
+  .btn-search-2{
+    margin-left: .3rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+    background-color: #ff2625;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    /* box-shadow: rgba(100, 100, 111, 0.635) 0px 7px 29px 0px; */
+  }
+  
+  .btn-search-2:hover{
+    background-color: white;
+    color: #ff2625;
+    border: 1px solid #ff2625;
+    box-shadow: rgba(100, 100, 111, 0.635) 0px 7px 29px 0px;
+  
+  }
+  
+  .btn-search-2:active{
+    background-color: #ff2625;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.477) 1.95px 1.95px 2.6px;
+  
+  }
