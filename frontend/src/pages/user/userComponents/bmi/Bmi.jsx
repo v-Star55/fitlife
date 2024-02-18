@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import './bmi.css';
 
 const Bmi = () => {
     const [height, setHeight] = useState(0);
@@ -15,13 +16,13 @@ const Bmi = () => {
   };
 
   return (
-   <div>
-      <h2>BMI Calculator</h2>
-      <div>
+   <div className='form'>
+     <div class="subtitle">Let's check your BMI!</div>
+      <div className='form_input'>
         <label>Height (in cm): </label>
         <input type="number" value={height} onChange={e => setHeight(e.target.value)} />
       </div>
-      <div>
+      <div className='form_input'>
         <label>Weight (in kg): </label>
         <input type="number" value={weight} onChange={e => setWeight(e.target.value)} />
       </div>
@@ -30,5 +31,8 @@ const Bmi = () => {
     </div>
   )
 }
+
+
+
 
 export default Bmi
