@@ -1,0 +1,13 @@
+Steps to start the project:
+
+1. Download the Zip.
+2. Extract it to a specific location.
+3. run the command "npm run dev" without going in any other directory.
+
+
+Features:
+
+1. Community
+2. Ai chatbot
+3. Exercise visualizer with video recommendation.
+4. Live video calling session for trainers and users.

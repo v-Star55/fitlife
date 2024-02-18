@@ -1,0 +1,275 @@
+.Welcome-To-Aplha{
+  position: relative;
+  background: url(../Asset/bg-3.jpg);
+  background-attachment: fixed;
+
+  background-size: cover;
+  height: 60rem;
+}
+
+.about{
+  background-color: #000000;
+}
+
+.Welcome-To-Aplha::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.489);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-para{
+  padding: 1rem;
+  text-align: center;
+    backdrop-filter: blur(4px);
+    background: #ffffff5f;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+.image-box-container{
+    margin: 14vh 0;
+    background-color: #f6604cec;
+    height: 40vh;
+    background-image: url("../Asset/gym.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .89;
+  }
+  .heading-1{
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+   color: white;
+  }
+
+  .heading-2{
+    font-size: 2.4rem;
+  }
+  .Links{
+    text-decoration: none;
+    color: white;
+  }
+  .contents{
+   text-align: center;
+   color: white;
+   padding: 50px 0px;
+  }
+  .contents-2{
+    position: relative;
+    z-index: 100;
+      padding-top: 5rem;
+      text-align: center;
+  }
+  /* .Welcome-To-Aplha{
+    display: flex;
+    justify-content: space-around;
+  
+  } */
+  
+  .img2-points ul li , 
+  .img3-points ul li, 
+  .img4-points ul li{
+    list-style: none;
+  }
+  .img-box{
+    margin: 0px 0px 0px 77px;
+  }
+
+  .para{
+    color: #feee;
+  /* padding: 23px 0px; */
+  }
+ 
+  .choose-contents{
+    margin-top: 3rem;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    padding-top: 87px;
+  }
+  .icons{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .icon-1{
+    padding: 1rem;
+    width: 35rem;
+    text-align: center;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: #ffffff7b;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+    margin-bottom: 2rem;
+
+  }
+  .p-2{
+    width: 100%;
+   color: black;
+   text-align: center;
+   font-weight: 500;
+  }
+ .heading-3_about{
+    color: #eee;
+    font-size:1.4rem;
+    font-weight: 500;
+  }
+  .Our-Trainer{
+    margin-top: 12vh;
+    text-align: center;
+  }
+  .he{
+    color: black;
+  }
+  .trainer-imgs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  /* .img1{
+    padding: 0px 14px;
+  } */
+  .img2{
+    padding: 0px 14px;
+  }
+  .img3{
+    padding: 0px 14px;
+  }
+  .img4{
+    padding: 0px 14px;
+  }
+  /* .img1:hover{
+    border: 2px solid white;
+    box-shadow: 10px 20px 5px lightgray;
+  } */
+  .img2:hover{
+    border: 2px solid white;
+    box-shadow: 10px 20px 5px lightgray;
+  }
+  .img3:hover{
+    border: 2px solid white;
+    box-shadow: 10px 20px 5px lightgray;
+  }
+  .img4:hover{
+    border: 2px solid white;
+    box-shadow: 10px 20px 5px lightgray;
+  }
+  .Our-Teams{
+    margin-top: 16vh;
+    text-align: center;
+    /* background-color: rgba(255, 231, 201, 0.975); */
+    height: 65vh;
+  }
+
+
+  /* ////////////////////////////////////////////////////////////// */
+  .Team-contents{
+    /* background-color:#f6604cec; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+   height: 55vh;
+   padding-top: 12vh;
+  
+  }
+  .team1-img{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30vh;
+    right: 12vw;
+    background-image: url("../Asset/run4.jpg");
+    background-size: contain;
+  
+  }
+  .team2-img{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30vh;
+    right: 12vw;
+    background-image: url("../Asset/run4.jpg");
+    background-size: contain;
+  }
+  .team3-img{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30vh;
+    right: 12vw;
+    background-image: url("../Asset/run4.jpg");
+    background-size: contain;
+  }
+  .team4-img{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30vh;
+    right: 12vw;
+    background-image: url("../Asset/run4.jpg");
+    background-size: contain;
+  
+  }
+
+  .team2{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:40vh;
+    width: 34vh;
+    border-radius: 12px;
+   transition: all .3s linear;
+
+
+  }
+  
+  
+  .team2:hover{
+    transform: scale(1.1);
+  }
+  
+
+  .team-back{
+    background-image: url(../Asset/bg-2.jpg);
+    /* filter: brightness(50%); */
+    background-size: cover;
+    
+  }
+
+  .team2::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.489);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .par{
+    position: relative;
+    z-index: 100;
+    color: #f6614c;
+    font-size: 1.4rem;
+    padding-top: 7rem;
+    font-weight: 700;
+    text-align: center;
+  }
+ 

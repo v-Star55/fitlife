@@ -31,16 +31,17 @@ const UserNavbar = ({setIsAuthenticated}) => {
         <Link to="/user/bmi">Calculate BMI</Link>
       </li>
       <li className='navbar-ul_li'>
-        <Link to="/user/live">Live Session</Link>
+        <a href="http://localhost:4000" target='_blank' rel='noreferrer' >Live Session</a>
       </li>
       <li className='navbar-ul_li'>
-        <Link to="/user/exercise">Exercise</Link>
+      <a href="http://localhost:7000" target='_blank' rel='noreferrer' >Exercise</a>
       </li>
+      
       <li className='navbar-ul_li'>
         <Link to="/user/nutri">NUTRI</Link>
       </li>
       <li className='navbar-ul_li'>
-        <Link to="/user/workout">Workout Planner</Link>
+        <Link to="/user/exercise">Workout Planner</Link>
       </li>
       <li className='navbar-ul_li'>
         <button className='btn-logout' onClick={handleLogout}>Logout</button>

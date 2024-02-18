@@ -79,11 +79,17 @@
   }
   
   .blog-cover {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/17779/yosemite-3.jpg");
     background-size: cover;
     border-radius: 5px 5px 0 0;
     height: 15rem;
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+  }
+
+  .blog-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   
   .blog-author,
@@ -103,7 +109,9 @@
     height: 32px;
     margin-right: 0.5rem;
     position: relative;
-    top: 8px;
+    /* border: 2px solid #ff0000; */
+    top: 7px;
+    left: -35px;
     width: 32px;
   }
   
@@ -222,7 +230,7 @@
   
   /* ////////////////////////////////////// */
   .comm-hero{
-    background: url("https://st4.depositphotos.com/12985848/21976/i/450/depositphotos_219769806-stock-photo-handsome-athletic-man-sitting-cube.jpg");
+    background: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     object-fit: cover;
     object-position: center;
@@ -231,6 +239,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    color: #fff;
     align-items: center;
     /* margin-bottom: 2rem; */
   }

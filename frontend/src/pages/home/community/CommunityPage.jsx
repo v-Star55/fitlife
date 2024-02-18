@@ -59,6 +59,7 @@ const handleAddPost = () => {
   
            <div class="blog-header">
              <div class="blog-cover">
+                <img src={post.image} alt="blog-cover" />
                <div class="blog-author">
                  <h3>Anonymous</h3>
                </div>

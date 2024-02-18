@@ -1,0 +1,34 @@
+import React from "react";
+
+const Trainer = () => {
+
+  const handleClick=()=>{
+
+    const trailer= document.querySelector('.trailer');
+    const video=document.querySelector('video')
+    trailer.classList.toggle('active')
+    video.currentTime=0
+    video.pause();
+  }
+
+
+  return (
+    <div className="trainer">
+      <img className="trainer-bg" src={require("../Asset/home-5.jpg")} />
+      <div class="trainer-text">
+          <span class="Roboto-Font" onClick={handleClick}>WATCH VIDEO</span>
+          <img src={require("../Asset/right-up.png")}/>
+      </div>
+      
+    <div class="trailer">
+        <video src={require("../Asset/workout.mp4")} controls="true" autoPlay></video>
+        <p  onClick={handleClick}>&#10005;</p>
+    </div>
+
+    </div>
+  );
+};
+
+export default Trainer;
+
+

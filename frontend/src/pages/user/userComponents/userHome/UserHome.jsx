@@ -1,10 +1,11 @@
 import React from 'react'
+import CommunityPage from '../../../home/community/CommunityPage'
 
 const UserHome = () => {
   return (
-    <div>
-        <h1>User Home</h1>
-    </div>
+    <>
+      <CommunityPage />
+    </>
   )
 }
 
