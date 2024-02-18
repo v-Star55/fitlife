@@ -5,6 +5,8 @@ Steps to start the project:
 3. run "npm i" in each folder.
 4. run the command "npm run dev" without going in any other directory.
 
+Note :- if any of the page or code shows an error then it is recommended to run "npm i" in that specific folder and then run "npm run dev" again. Also the error may be because of the node version mismatch or dependencies mismatch.
+
 
 Features:
 
