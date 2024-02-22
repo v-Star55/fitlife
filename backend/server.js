@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-// mongoose.connect('mongodb+srv://vaibhav:6JXb8sz4CQL4ZQtc@cluster0.spfjsm3.mongodb.net/?retryWrites=true&w=majority')
+
 mongoose
   .connect("mongodb://localhost:27017")
   .then((resut) => {

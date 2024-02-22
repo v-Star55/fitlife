@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // import firebase from '../../../firebase/app';
-import { auth } from '../../../firebase';
+// import { auth } from '../../../firebase';
 
 const CommunityPage = () => {
 
